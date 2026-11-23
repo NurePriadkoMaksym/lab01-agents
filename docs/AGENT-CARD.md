@@ -6,7 +6,7 @@
 - Дата: 15.11.2026
 - Автор: Прядко Максим Андрійович, група ПЗПІ-23-4, e-mail maksym.priadko@nure.ua
 - Ліцензія: MIT
-- Посилання на архів: [link]()
+- Посилання на архів: [link](https://drive.google.com/file/d/1WpVzmc7wGBJir-HxBuzoGD_KCHHsRQTA/view?usp=sharing)
 
 ## 2. Призначення
 - Предметна область: рівні ізоляції транзакцій SQL та аномалії паралельного виконання
