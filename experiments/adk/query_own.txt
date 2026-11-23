@@ -1,0 +1,207 @@
+Starting a temporary local server on port 18083 (stops automatically when done).
+[user]: Які рівні ізоляції допускають dirty read?
+[root_agent]: 
+[tool_call: lookup_anomaly({"name": "dirty read"})]
+{
+  "modelVersion": "gemini-3.6-flash",
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "id": "call_10552491799766910545",
+          "args": {
+            "name": "dirty read"
+          },
+          "name": "lookup_anomaly"
+        },
+        "thoughtSignature": "EpYKCpMKAWkUfRPDphomQSm71Kgq2mt8ZvV3qLvQa9z0LN-CcIZN2_1rtaZdIORrN_0eX80TbFySp2YGpnjZmqPA1sMzVqkHfYaOy8idX1iyo7jbzRTR6WEveQWE2_pbTANm-JCgGphb6tV_T34ieYmQdtXzdoR_XgPvXbv-LKufeHGvgGrjAewVB4pbARUrLvvelhCiferB6PvbScrC5iRMB624b0DN1R0cIR6K_baoSfajJ2sYuW-q2MGGzDaizx7SLYjuLJxozd1F1lHxr0__mYGXDajOwcM_HOEnQx3NwpdRwBk8LvdDB5AhHs_mbaKJXRVZ2NAs5uhi1db2FAYzFUxjVVkhArH9faTQzaqCDpQpkWd6E6Fzlkgyd1s-Oh--AidLggvmee-e2Iqa6tDW_VEZjWzD1Dx-KL8yF6ymCNKh8nCu-FRk2c70F1LsewTqmeeNG0tSI7uqdBOU_2WZLT6NjRO6ctX0MhsTOk68NCQclF9CWZR6E45K47UYBwjfodWmh9g8sPJVBuGNFmeyuOsjHJPpeWNkMBBLNpEz405k2FPS2KdtbJfqU7rzR_EWq2WHXjgfj0qGw1qdD6YrklDPJxFe0BTC3oqapLbl8pyTBKOGAlyU4dpZ6YGfVHlPgQqKTDtBj1CKcuVry529o-M-fNlYkSAK7K9lVz4isEwwMrQdv9XGHL-8lFx4h7wfKAZ-Rk6qIRsDoNgFQ0FC4oYXPFmQB0oi-ml-0q5TGaFyKEsCk7TMF6vwat1iiQ13bqyBA0fr-etLtZxNs25iewGG3rzgithEDckoo66l7ceoXLl5oNd-08qSQTtk6d9LDJhUpCzz39n-FREaNY6Ao87GhYHPKrty1eydIzyr17NJ-q7I6rFyKAb0v6a9U9GwkYXX6ju-OF01peNZLJ2A9O7LW-fxw9gTado-K4UlrPCR39Xi5JRzVVfMqetAp317CwS_aqeNlryL73ynjt_7ewTSTTiKVEopZvT1M6B-OevpOIZngDsDOX3lLej09v8LCxayffNj3IJRqB6gupxVONi1dng1DhlTR55JPatX3Tiz1LzicseeKoM-b53Tvveumeuonau5l5NclNpLUD3RchTNzIZEQbshmu6R2Py6i7joUHmw2D6-AgcueeqUkFcTSWMLzSmu28afzjIZO33CoRkhAPLvaH9gpihznfImdu-PyTLAYu6lGI-VuXw82ibHxYvtWP6UcteD17NkoakLdrErsBcrfFG4MfZSnpdbMRc3TJe80G9swwmX4V09As-Dz49gzCWVctmyKjWaQry5Ly7xHSroZq_F-a-nnyvlSa_bVg_kDlg2Ng77U0sqpsF8x23cL4hrB3Qkw10g68mW-ZvNl0WdiyIV_0zSQp7OS0448G3wjO9v_epEa3IzmshAT3YUSQkNnj3MTA0rMDMrD1auiIl5cNTKSr4P4nPBl2lL_MyOMsgKTwcezjsuUBR_i6ppJkLerAVHodkby9ijefCefqdBFERm4Do8iv9omoqIBrMXrb6Jcdo3L53ayOLYgQhkgPPBNoBZcmTlFQD3_0Kb1q7x3g6znjEq7KG1eNq2Zq1Kf1itx5w9XGHwNsJG4T6nJ520HeqYHwIOiSruQV11dTAAreDCWH1bBlFpsHqXkCK_m42wsQZwqAtwXIg5AbjfV_8y9tIIluQj0SLnsWDhU2ZczHAj5_T0s7Lgkmq6ZbWtuytGtlVZOCvfNSmtiS5FBO9M"
+      }
+    ],
+    "role": "model"
+  },
+  "finishReason": "STOP",
+  "usageMetadata": {
+    "candidatesTokenCount": 17,
+    "promptTokenCount": 687,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 687
+      }
+    ],
+    "thoughtsTokenCount": 254,
+    "totalTokenCount": 958
+  },
+  "invocationId": "e-1b0c4b99-19e1-4f48-9d01-d462431733a4",
+  "author": "root_agent",
+  "actions": {
+    "stateDelta": {},
+    "artifactDelta": {},
+    "requestedAuthConfigs": {},
+    "requestedToolConfirmations": {}
+  },
+  "nodeInfo": {
+    "path": "root_agent@1"
+  },
+  "longRunningToolIds": [],
+  "id": "a846e34e-4d35-4a28-bbcb-fa827439993c",
+  "timestamp": 1794822121.0628924
+}
+
+[tool_response: lookup_anomaly -> {"result": "dirty-read: Dirty read: \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u044f \u0447\u0438\u0442\u0430\u0454 \u0437\u043c\u0456\u043d\u0438 \u0456\u043d\u0448\u043e\u0457 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u0457, \u0449\u0435 \u043d\u0435 \u0437\u0430\u0444\u0456\u043a\u0441\u043e\u0432\u0430\u043d\u0456; \u044f\u043a\u0449\u043e \u0442\u0430 \u0432\u0456\u0434\u043a\u043e\u0442\u0438\u0442\u044c\u0441\u044f, \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u043d\u0456 \u0434\u0430\u043d\u0456 \u043d\u0456\u043a\u043e\u043b\u0438 \u043d\u0435 \u0456\u0441\u043d\u0443\u0432\u0430\u043b\u0438. \u0414\u043e\u043f\u0443\u0441\u043a\u0430\u0454 \u043b\u0438\u0448\u0435 Read Uncommitted."}]
+{
+  "content": {
+    "parts": [
+      {
+        "functionResponse": {
+          "id": "call_10552491799766910545",
+          "name": "lookup_anomaly",
+          "response": {
+            "result": "dirty-read: Dirty read: \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u044f \u0447\u0438\u0442\u0430\u0454 \u0437\u043c\u0456\u043d\u0438 \u0456\u043d\u0448\u043e\u0457 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u0457, \u0449\u0435 \u043d\u0435 \u0437\u0430\u0444\u0456\u043a\u0441\u043e\u0432\u0430\u043d\u0456; \u044f\u043a\u0449\u043e \u0442\u0430 \u0432\u0456\u0434\u043a\u043e\u0442\u0438\u0442\u044c\u0441\u044f, \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u043d\u0456 \u0434\u0430\u043d\u0456 \u043d\u0456\u043a\u043e\u043b\u0438 \u043d\u0435 \u0456\u0441\u043d\u0443\u0432\u0430\u043b\u0438. \u0414\u043e\u043f\u0443\u0441\u043a\u0430\u0454 \u043b\u0438\u0448\u0435 Read Uncommitted."
+          }
+        }
+      }
+    ],
+    "role": "user"
+  },
+  "invocationId": "e-1b0c4b99-19e1-4f48-9d01-d462431733a4",
+  "author": "root_agent",
+  "actions": {
+    "stateDelta": {},
+    "artifactDelta": {},
+    "requestedAuthConfigs": {},
+    "requestedToolConfirmations": {}
+  },
+  "nodeInfo": {
+    "path": "root_agent@1"
+  },
+  "id": "ed10ea9a-fe16-43b3-9193-13c2d2ddba38",
+  "timestamp": 1794822121.0645435
+}
+
+[tool_call: lookup_isolation_level({"name": "read uncommitted"})]
+{
+  "modelVersion": "gemini-3.6-flash",
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "id": "call_1960820682763926276",
+          "args": {
+            "name": "read uncommitted"
+          },
+          "name": "lookup_isolation_level"
+        },
+        "thoughtSignature": "Ep4GCpsGAWkUfRMlq0JgazR1wtUIUxRXNuz99QE56RPHoP7UbiO7JnINPkCUB0MvHb-h9gaAhlP1qSJnduDKnur_CFGMpWP5KqgLKql6Pk3WOZKvO7yvuiRyBgHUnZH1YheXEbtm3_NBXW-6LwNf7WC7OVm2bXivTGBrnfA6GR4WyXWTBpEERivsrXXgDupt_3l9-H_6eE87NrJx2eLmYYOu54x0PYZnReVvTHQrQdZsUlU_znhKxnQpiblmCPOIq5LQty9Kj3QmewwcVCn_h7TF7-RvNste_L9hjQSipWJYhBZZrYACxNJ1UopJJQnQbXyz9k3i1ENXfgUqKMuYLCedYr0qXnAJ19ipkglfjptLQw9G0FGp6c_dL83bi7WtfPTL4cahYH6vHxIVx7pz7fZ8MopX27yqzS5Dt0ZdYjX6ajZsyzD1NWGiE-EnecefbWuUMh_XjSk2Uyll4qfmFys1Gt7tjv47jSKh9pjYL12rTW0S7PCW6qobrLtluxdDG5qG8R8Ur_tkUn6tMictyrSWflmjLLykhricVgm369zrFmcAzqVoL6p_6yP_sJ9W8NulWxOxNNOAVTpjRweTFuXD81_0OKjT9rXEU5_ZxjxgR3P-_CTP8X449U8aKJ_1_nQtGA5gwsucm-tHd7Cjkb12ziwIQDdGCOkTvm3YZoxyux8In9i_Ql-UXCZ97W0j23xXQaTaTAW8F8jBw8QMQsEDQ7j--494WmcKo8vncn_JOVHdYKTYtLm5U7TKfGj7qn9oolTLTaIHkRaYd6ZWZW-TSl4otYEvy2wmv42nraqDfU_tyzJtXN1Y-XIYKQ8T_ynvUV3cbqWzTT6_O1RUq6RHmn5eVauYKJHV_OxrfF-wENmDsSIUL8MjUunf4cvBOcmeTRjsG2kvqVWudn3VaRGR0N_ixzZgzvbIzqqo4AjPhfb0xT7yAMvZeGZ_fP7hZtfPzcrnWoz2hu2dIdiK586sWBl1FWNqZbD0S_HL-4JYHDnwjfPfLeCFw-5jdXafmCLntZRA1cOA0Iy0NRnwAxJPEzpT35lx4EijWr4K21zg"
+      }
+    ],
+    "role": "model"
+  },
+  "finishReason": "STOP",
+  "usageMetadata": {
+    "candidatesTokenCount": 20,
+    "promptTokenCount": 1021,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1021
+      }
+    ],
+    "thoughtsTokenCount": 144,
+    "totalTokenCount": 1185
+  },
+  "invocationId": "e-1b0c4b99-19e1-4f48-9d01-d462431733a4",
+  "author": "root_agent",
+  "actions": {
+    "stateDelta": {},
+    "artifactDelta": {},
+    "requestedAuthConfigs": {},
+    "requestedToolConfirmations": {}
+  },
+  "nodeInfo": {
+    "path": "root_agent@1"
+  },
+  "longRunningToolIds": [],
+  "id": "ac3bfd92-310e-4623-af13-91cee79dde43",
+  "timestamp": 1794822122.5815175
+}
+
+[tool_response: lookup_isolation_level -> {"result": "read-uncommitted: Read Uncommitted: \u043d\u0430\u0439\u043d\u0438\u0436\u0447\u0438\u0439 \u0440\u0456\u0432\u0435\u043d\u044c \u0456\u0437\u043e\u043b\u044f\u0446\u0456\u0457 \u0437\u0430 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043e\u043c SQL; \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u044f \u043c\u043e\u0436\u0435 \u0447\u0438\u0442\u0430\u0442\u0438 \u043d\u0435\u0437\u0430\u0444\u0456\u043a\u0441\u043e\u0432\u0430\u043d\u0456 \u0437\u043c\u0456\u043d\u0438 \u0456\u043d\u0448\u0438\u0445 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u0439. \u0414\u043e\u043f\u0443\u0441\u043a\u0430\u0454 dirty read, non-repeatable read \u0456 phantom read. \u0423 PostgreSQL \u0446\u0435\u0439 \u0440\u0456\u0432\u0435\u043d\u044c \u043f\u043e\u0432\u043e\u0434\u0438\u0442\u044c\u0441\u044f \u044f\u043a Read Committed."}]
+{
+  "content": {
+    "parts": [
+      {
+        "functionResponse": {
+          "id": "call_1960820682763926276",
+          "name": "lookup_isolation_level",
+          "response": {
+            "result": "read-uncommitted: Read Uncommitted: \u043d\u0430\u0439\u043d\u0438\u0436\u0447\u0438\u0439 \u0440\u0456\u0432\u0435\u043d\u044c \u0456\u0437\u043e\u043b\u044f\u0446\u0456\u0457 \u0437\u0430 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043e\u043c SQL; \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u044f \u043c\u043e\u0436\u0435 \u0447\u0438\u0442\u0430\u0442\u0438 \u043d\u0435\u0437\u0430\u0444\u0456\u043a\u0441\u043e\u0432\u0430\u043d\u0456 \u0437\u043c\u0456\u043d\u0438 \u0456\u043d\u0448\u0438\u0445 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u0439. \u0414\u043e\u043f\u0443\u0441\u043a\u0430\u0454 dirty read, non-repeatable read \u0456 phantom read. \u0423 PostgreSQL \u0446\u0435\u0439 \u0440\u0456\u0432\u0435\u043d\u044c \u043f\u043e\u0432\u043e\u0434\u0438\u0442\u044c\u0441\u044f \u044f\u043a Read Committed."
+          }
+        }
+      }
+    ],
+    "role": "user"
+  },
+  "invocationId": "e-1b0c4b99-19e1-4f48-9d01-d462431733a4",
+  "author": "root_agent",
+  "actions": {
+    "stateDelta": {},
+    "artifactDelta": {},
+    "requestedAuthConfigs": {},
+    "requestedToolConfirmations": {}
+  },
+  "nodeInfo": {
+    "path": "root_agent@1"
+  },
+  "id": "dcc27f63-a348-465b-acf1-2d7c811f8710",
+  "timestamp": 1794822122.5823371
+}
+Аномалію **dirty read** (брудне читання) допускає лише один рівень ізоляції:
+
+* **Read Uncommitted** — найнижчий рівень ізоляції за стандартом SQL. На цьому рівні транзакція може читати незафіксовані зміни інших транзакцій.
+
+**Що таке dirty read:**
+Це ситуація, коли транзакція читає зміни іншої транзакції, які ще не були зафіксовані. Якщо та транзакція відкотиться, прочитані дані вважатимуться такими, що ніколи не існували.
+{
+  "modelVersion": "gemini-3.6-flash",
+  "content": {
+    "parts": [
+      {
+        "text": "\u0410\u043d\u043e\u043c\u0430\u043b\u0456\u044e **dirty read** (\u0431\u0440\u0443\u0434\u043d\u0435 \u0447\u0438\u0442\u0430\u043d\u043d\u044f) \u0434\u043e\u043f\u0443\u0441\u043a\u0430\u0454 \u043b\u0438\u0448\u0435 \u043e\u0434\u0438\u043d \u0440\u0456\u0432\u0435\u043d\u044c \u0456\u0437\u043e\u043b\u044f\u0446\u0456\u0457:\n\n* **Read Uncommitted** \u2014 \u043d\u0430\u0439\u043d\u0438\u0436\u0447\u0438\u0439 \u0440\u0456\u0432\u0435\u043d\u044c \u0456\u0437\u043e\u043b\u044f\u0446\u0456\u0457 \u0437\u0430 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043e\u043c SQL. \u041d\u0430 \u0446\u044c\u043e\u043c\u0443 \u0440\u0456\u0432\u043d\u0456 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u044f \u043c\u043e\u0436\u0435 \u0447\u0438\u0442\u0430\u0442\u0438 \u043d\u0435\u0437\u0430\u0444\u0456\u043a\u0441\u043e\u0432\u0430\u043d\u0456 \u0437\u043c\u0456\u043d\u0438 \u0456\u043d\u0448\u0438\u0445 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u0439.\n\n**\u0429\u043e \u0442\u0430\u043a\u0435 dirty read:**\n\u0426\u0435 \u0441\u0438\u0442\u0443\u0430\u0446\u0456\u044f, \u043a\u043e\u043b\u0438 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u044f \u0447\u0438\u0442\u0430\u0454 \u0437\u043c\u0456\u043d\u0438 \u0456\u043d\u0448\u043e\u0457 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u0457, \u044f\u043a\u0456 \u0449\u0435 \u043d\u0435 \u0431\u0443\u043b\u0438 \u0437\u0430\u0444\u0456\u043a\u0441\u043e\u0432\u0430\u043d\u0456. \u042f\u043a\u0449\u043e \u0442\u0430 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u044f \u0432\u0456\u0434\u043a\u043e\u0442\u0438\u0442\u044c\u0441\u044f, \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u043d\u0456 \u0434\u0430\u043d\u0456 \u0432\u0432\u0430\u0436\u0430\u0442\u0438\u043c\u0443\u0442\u044c\u0441\u044f \u0442\u0430\u043a\u0438\u043c\u0438, \u0449\u043e \u043d\u0456\u043a\u043e\u043b\u0438 \u043d\u0435 \u0456\u0441\u043d\u0443\u0432\u0430\u043b\u0438.",
+        "thoughtSignature": "EtAKCs0KAWkUfRNQAVi0hDb0eBAhhOFI8o7Oo1C7IVwT3qsalgq1XIVnKzCc5sfgTVOuzxHxlDjcew4KCwMbo7ihIF3tWTkNZq9dUAT7WVW8zhESBg_3KBIlxwKbKzfNxZmCaB8XpLAtzYiUDFfIo8IizGzzN_5U-Njyn_Dpckpw0IfjJpIGqDfzPksOW3C8LhYCVnXIsdxucdSZg9vF8SrcuRGCJ8IN7fCyZ9nfVdPYSLLfvBR8j6_9lOXWcebYoUjAXLQn2_f7WmuTlaL0NbzyHi2-plQMrV3RE_js_H_mS8TjK7v9FPPAkdn7z4tCA-cGKW8a4TaQ60EAUPro3Do7d2BoDwx0ZF2KE8ICSqli4JSQSZNeK7rAQpKo32EKrFpIZYkUPg7NOiGQ0wqhloMdjyU-Bc0IUCrLiX2Z6wXezrIeTusvBZCEEO_xN0t2HcA_0pP9I5rXGMyAnD1hbhrLb62InHVP3c_59JrWn7BANFzcUJt-eiQ3mhMrk19BdLVKXeUbt70sxsMq6rfVbaqjHkiNsmaCYKhN5aGo3nxdwp93c0pYLMxkPeh3pJlDeswCT5hZf5Z7ILqUmO-9Agrb-kXERuZRm-Kmj_Vnbht4YRMCHgPgbXQmWl7_JSulvh4YktE0Y0LUr43GAFvHXKVJZFVawMOSZhfmzkN3UQzD6L2xM983iB4VJDor-5GOYYKTZcQ4we8iofGFsumOk6rWRgzJ4uNY32a8Tq9QjjS1JRVnYWoyX_a_m_9AlzNy9A9uIarx_eW4yD8lITmNWKW-TZ5U8xqG4w06siesZ5zLaSbtiuO91Jnig79xC1UvAu7VxXXMP9Q02anzHa3QWSb-_b47CzU-XFcp93tTdFZKbNKdUFT9cy-31HKqYYDBSIq0XAgmtNzE1RVXncF_yhkz64F0SeSjWMzTt5yOHzA8jiyosF-EA7zDSdNAgRHgytdupTUXpA-XMdvvfoO2OpJAIOpUoeDwQk9lSnKof1UHrA-9mBP7-E2ZxwXGkhCNsWh-7cXlQ6ZTqq6PmVlvIPiZxYf5dACYgCgNtcIvvaFkDQ3yi527W_xJTNGa388DhhMyl1Z3TQ6TaFNdeL9i2C5n7wbjLc42npzRFvP-SVNWKpV1yStoR7EeMTrsIKabACEg0tO2ehTMTCcA0XYXD_Wzo3ZZgnyO6q1Siy7q4WKBglnd2PcbhQeGNIr2rj-UfvkNzTxm7ImZhIeWQV-EzFmZECCEots3GP_TlXKipfSky1Sj0afGJdCdy6VWcobJosfwUuhEoWRoyLbhjhhpt-IircbV-DnIdFC1NYIRizve76nmxneCISkfwYRYNduSKedxGDwkQsYHdMiBcD8oERTrCr4hGhd_UxGZAP43zUROZjSWOnyRIuz9ce5ylQDbSv5j0H-roVyI33Y_XaUxhLVtANZEl-3-fvcT3S0oSQphdlBQ_eHvY9sTHTfw_j22zyP8Lvl_UPK-NsFKQI04JqR0xDMR4lrJ8yDVke667oa2s6y92eZFVavdZJmQ1-U7rU9EAcb92tuOSnM6cXtEGm9e3F2Nv6vpqkrJLfpVm7ok6ti73kmiMJNNQ5n5FsSgYxD8DX9X7oNmiQsMLHyTq1ef2zLfUVNGX8n5c4j9KoFV_n5XZE81PIm6AOzsDfRU21VEZJU1agydHmLJVwDvAgACTvLUEISbWlhiX7zNAruRnhHp9K_4l-iLEFqvRf1VM1bRarWINAajQRuxYLVwFklt2vYZTmtF-oZdVOG3_HVaaZemaKO9p3Ku8LJci2LCLCKkzcdvsmXkwmj-UK7v0zyguQ=="
+      }
+    ],
+    "role": "model"
+  },
+  "finishReason": "STOP",
+  "usageMetadata": {
+    "candidatesTokenCount": 129,
+    "promptTokenCount": 1267,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1267
+      }
+    ],
+    "thoughtsTokenCount": 247,
+    "totalTokenCount": 1643
+  },
+  "invocationId": "e-1b0c4b99-19e1-4f48-9d01-d462431733a4",
+  "author": "root_agent",
+  "actions": {
+    "stateDelta": {},
+    "artifactDelta": {},
+    "requestedAuthConfigs": {},
+    "requestedToolConfirmations": {}
+  },
+  "nodeInfo": {
+    "path": "root_agent@1"
+  },
+  "id": "a36cb142-b08e-4a4f-8351-09e7f7d98814",
+  "timestamp": 1794822124.7464426
+}
+
+
+Session: a1cb54ea-1c0e-4633-99be-bcf3ded697fd
+  One-off session — add --start-server to keep the local server (and its sessions) alive so you can resume with --session-id.
+Local server stopped.

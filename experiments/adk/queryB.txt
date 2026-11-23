@@ -1,0 +1,160 @@
+Starting a temporary local server on port 18081 (stops automatically when done).
+[user]: Порівняй Read Uncommitted і Serializable
+[root_agent]: 
+[tool_call: lookup_isolation_level({"name": "Read Uncommitted"})]
+[tool_call: lookup_isolation_level({"name": "Serializable"})]
+{
+  "modelVersion": "gemini-3.6-flash",
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "id": "call_10041400562228576296",
+          "args": {
+            "name": "Read Uncommitted"
+          },
+          "name": "lookup_isolation_level"
+        },
+        "thoughtSignature": "EvAECu0EAWkUfRO675RFSBwPfW4KCokkahbGmJTfq3GS5Aerj0IwYncozAwM6SOrdlLM46ufylCxyfNag_ux4cyEwjmbAh4VYs5qrsddajE775Mvp_cJ4kElHQ8H8otsYVOfKx6MNSbtqj8NG2_kk5S7VE1m5GQe1TBvc1EIL-5B3eSPzBdLeuk6yJhJRr13dncD1opoiJ28EQxXhuvrOt3Mxbx-41pfo84E4NSMd6Em9BdVtCAVftyn7e-VKQV58GxPA2dVPRqxlIp0yWIRAmuO5zH_qPtlD7L5p26EdCdmSOqMVZHXV0ZizJg-5mRrrKGGqhS1TJtkrawYeqGPuQVq2buE71TZNG6D0-klj0SZke4GLN8vG88O24JzjBO3WW1YWPaAoFPJU2Gd3fMp-wuNMDpkkDdE0xZuST1BuV9OiDuZKGIMYmWl5Vgb0yDBDektai4nS8hvk0SC4gousIRkpgDBIh7I4ZFQdpCds0FTbsZ10O1YLT0VDr2-k1zG6m0NlaeC4MAoo0Z7R2Y0JusekqT5W5pp7I0yfX9p0VWaj3E8XF46Wk5uTW2_q4K_MLRL7yrTpvdnqB6QTP--PtEHtFmBLHN39h4IQqVsmiVZhfSh50fpckjtcvhYLPGeluZMQ7biOO01fGSI8ptaKlR2UWIdax_4PElSyVQkHNKHleyXHMjfzDjN6SjPgoaOyyBCp7k7GzTx9nhKOvSkyClEjYGslRuZZYo7B2C5exJ9w5-wcVcgMcvh61sugurgP7aA28w9L38fm-6C4axXQ3OmC7dsfLOojNf5uiAErehdT8hDt98P1CIc5s0stiu6cbSu"
+      },
+      {
+        "functionCall": {
+          "id": "call_10041400562228577351",
+          "args": {
+            "name": "Serializable"
+          },
+          "name": "lookup_isolation_level"
+        }
+      }
+    ],
+    "role": "model"
+  },
+  "finishReason": "STOP",
+  "usageMetadata": {
+    "candidatesTokenCount": 38,
+    "promptTokenCount": 684,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 684
+      }
+    ],
+    "thoughtsTokenCount": 114,
+    "totalTokenCount": 836
+  },
+  "invocationId": "e-0d4a4b48-be3f-45e3-b701-388aac606c74",
+  "author": "root_agent",
+  "actions": {
+    "stateDelta": {},
+    "artifactDelta": {},
+    "requestedAuthConfigs": {},
+    "requestedToolConfirmations": {}
+  },
+  "nodeInfo": {
+    "path": "root_agent@1"
+  },
+  "longRunningToolIds": [],
+  "id": "f84073c3-f4db-458d-a3d4-2917cd505b4d",
+  "timestamp": 1794822102.342269
+}
+
+[tool_response: lookup_isolation_level -> {"result": "read-uncommitted: Read Uncommitted: \u043d\u0430\u0439\u043d\u0438\u0436\u0447\u0438\u0439 \u0440\u0456\u0432\u0435\u043d\u044c \u0456\u0437\u043e\u043b\u044f\u0446\u0456\u0457 \u0437\u0430 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043e\u043c SQL; \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u044f \u043c\u043e\u0436\u0435 \u0447\u0438\u0442\u0430\u0442\u0438 \u043d\u0435\u0437\u0430\u0444\u0456\u043a\u0441\u043e\u0432\u0430\u043d\u0456 \u0437\u043c\u0456\u043d\u0438 \u0456\u043d\u0448\u0438\u0445 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u0439. \u0414\u043e\u043f\u0443\u0441\u043a\u0430\u0454 dirty read, non-repeatable read \u0456 phantom read. \u0423 PostgreSQL \u0446\u0435\u0439 \u0440\u0456\u0432\u0435\u043d\u044c \u043f\u043e\u0432\u043e\u0434\u0438\u0442\u044c\u0441\u044f \u044f\u043a Read Committed."}]
+[tool_response: lookup_isolation_level -> {"result": "serializable: Serializable: \u043d\u0430\u0439\u0432\u0438\u0449\u0438\u0439 \u0440\u0456\u0432\u0435\u043d\u044c; \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043f\u0430\u0440\u0430\u043b\u0435\u043b\u044c\u043d\u0438\u0445 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u0439 \u0435\u043a\u0432\u0456\u0432\u0430\u043b\u0435\u043d\u0442\u043d\u0438\u0439 \u0434\u0435\u044f\u043a\u043e\u043c\u0443 \u0457\u0445\u043d\u044c\u043e\u043c\u0443 \u043f\u043e\u0441\u043b\u0456\u0434\u043e\u0432\u043d\u043e\u043c\u0443 \u0432\u0438\u043a\u043e\u043d\u0430\u043d\u043d\u044e. \u0423\u0441\u0443\u0432\u0430\u0454 dirty read, non-repeatable read \u0456 phantom read. \u0422\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u044e \u043c\u043e\u0436\u0435 \u0431\u0443\u0442\u0438 \u0432\u0456\u0434\u0445\u0438\u043b\u0435\u043d\u043e \u0447\u0435\u0440\u0435\u0437 \u043a\u043e\u043d\u0444\u043b\u0456\u043a\u0442 \u0441\u0435\u0440\u0456\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u0457, \u0442\u043e\u0434\u0456 \u0457\u0457 \u0442\u0440\u0435\u0431\u0430 \u043f\u043e\u0432\u0442\u043e\u0440\u0438\u0442\u0438."}]
+{
+  "content": {
+    "parts": [
+      {
+        "functionResponse": {
+          "id": "call_10041400562228576296",
+          "name": "lookup_isolation_level",
+          "response": {
+            "result": "read-uncommitted: Read Uncommitted: \u043d\u0430\u0439\u043d\u0438\u0436\u0447\u0438\u0439 \u0440\u0456\u0432\u0435\u043d\u044c \u0456\u0437\u043e\u043b\u044f\u0446\u0456\u0457 \u0437\u0430 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043e\u043c SQL; \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u044f \u043c\u043e\u0436\u0435 \u0447\u0438\u0442\u0430\u0442\u0438 \u043d\u0435\u0437\u0430\u0444\u0456\u043a\u0441\u043e\u0432\u0430\u043d\u0456 \u0437\u043c\u0456\u043d\u0438 \u0456\u043d\u0448\u0438\u0445 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u0439. \u0414\u043e\u043f\u0443\u0441\u043a\u0430\u0454 dirty read, non-repeatable read \u0456 phantom read. \u0423 PostgreSQL \u0446\u0435\u0439 \u0440\u0456\u0432\u0435\u043d\u044c \u043f\u043e\u0432\u043e\u0434\u0438\u0442\u044c\u0441\u044f \u044f\u043a Read Committed."
+          }
+        }
+      },
+      {
+        "functionResponse": {
+          "id": "call_10041400562228577351",
+          "name": "lookup_isolation_level",
+          "response": {
+            "result": "serializable: Serializable: \u043d\u0430\u0439\u0432\u0438\u0449\u0438\u0439 \u0440\u0456\u0432\u0435\u043d\u044c; \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u043f\u0430\u0440\u0430\u043b\u0435\u043b\u044c\u043d\u0438\u0445 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u0439 \u0435\u043a\u0432\u0456\u0432\u0430\u043b\u0435\u043d\u0442\u043d\u0438\u0439 \u0434\u0435\u044f\u043a\u043e\u043c\u0443 \u0457\u0445\u043d\u044c\u043e\u043c\u0443 \u043f\u043e\u0441\u043b\u0456\u0434\u043e\u0432\u043d\u043e\u043c\u0443 \u0432\u0438\u043a\u043e\u043d\u0430\u043d\u043d\u044e. \u0423\u0441\u0443\u0432\u0430\u0454 dirty read, non-repeatable read \u0456 phantom read. \u0422\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u044e \u043c\u043e\u0436\u0435 \u0431\u0443\u0442\u0438 \u0432\u0456\u0434\u0445\u0438\u043b\u0435\u043d\u043e \u0447\u0435\u0440\u0435\u0437 \u043a\u043e\u043d\u0444\u043b\u0456\u043a\u0442 \u0441\u0435\u0440\u0456\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u0457, \u0442\u043e\u0434\u0456 \u0457\u0457 \u0442\u0440\u0435\u0431\u0430 \u043f\u043e\u0432\u0442\u043e\u0440\u0438\u0442\u0438."
+          }
+        }
+      }
+    ],
+    "role": "user"
+  },
+  "invocationId": "e-0d4a4b48-be3f-45e3-b701-388aac606c74",
+  "author": "root_agent",
+  "actions": {
+    "stateDelta": {},
+    "artifactDelta": {},
+    "requestedAuthConfigs": {},
+    "requestedToolConfirmations": {}
+  },
+  "nodeInfo": {
+    "path": "root_agent@1"
+  },
+  "id": "4ee7175c-c504-47cd-a0d4-b33f6292172d",
+  "timestamp": 1794822102.343818
+}
+Ось порівняння рівнів ізоляції **Read Uncommitted** та **Serializable** на основі перевірених даних:
+
+---
+
+### 1. **Read Uncommitted**
+* **Рівень ізоляції:** найнижчий рівень за стандартом SQL.
+* **Поведінка:** транзакція може читати незафіксовані зміни інших транзакцій.
+* **Аномалії:** допускає **dirty read**, **non-repeatable read** та **phantom read**.
+* **Особливість:** у PostgreSQL цей рівень поводиться як Read Committed.
+
+---
+
+### 2. **Serializable**
+* **Рівень ізоляції:** найвищий рівень.
+* **Поведінка:** результат виконання паралельних транзакцій є еквівалентним деякому їхньому послідовному виконанню.
+* **Аномалії:** усуває **dirty read**, **non-repeatable read** та **phantom read**.
+* **Особливість:** транзакцію може бути відхилено через конфлікт серіалізації, і в такому разі її необхідно повторити.
+{
+  "modelVersion": "gemini-3.6-flash",
+  "content": {
+    "parts": [
+      {
+        "text": "\u041e\u0441\u044c \u043f\u043e\u0440\u0456\u0432\u043d\u044f\u043d\u043d\u044f \u0440\u0456\u0432\u043d\u0456\u0432 \u0456\u0437\u043e\u043b\u044f\u0446\u0456\u0457 **Read Uncommitted** \u0442\u0430 **Serializable** \u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0456 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u0435\u043d\u0438\u0445 \u0434\u0430\u043d\u0438\u0445:\n\n---\n\n### 1. **Read Uncommitted**\n* **\u0420\u0456\u0432\u0435\u043d\u044c \u0456\u0437\u043e\u043b\u044f\u0446\u0456\u0457:** \u043d\u0430\u0439\u043d\u0438\u0436\u0447\u0438\u0439 \u0440\u0456\u0432\u0435\u043d\u044c \u0437\u0430 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043e\u043c SQL.\n* **\u041f\u043e\u0432\u0435\u0434\u0456\u043d\u043a\u0430:** \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u044f \u043c\u043e\u0436\u0435 \u0447\u0438\u0442\u0430\u0442\u0438 \u043d\u0435\u0437\u0430\u0444\u0456\u043a\u0441\u043e\u0432\u0430\u043d\u0456 \u0437\u043c\u0456\u043d\u0438 \u0456\u043d\u0448\u0438\u0445 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u0439.\n* **\u0410\u043d\u043e\u043c\u0430\u043b\u0456\u0457:** \u0434\u043e\u043f\u0443\u0441\u043a\u0430\u0454 **dirty read**, **non-repeatable read** \u0442\u0430 **phantom read**.\n* **\u041e\u0441\u043e\u0431\u043b\u0438\u0432\u0456\u0441\u0442\u044c:** \u0443 PostgreSQL \u0446\u0435\u0439 \u0440\u0456\u0432\u0435\u043d\u044c \u043f\u043e\u0432\u043e\u0434\u0438\u0442\u044c\u0441\u044f \u044f\u043a Read Committed.\n\n---\n\n### 2. **Serializable**\n* **\u0420\u0456\u0432\u0435\u043d\u044c \u0456\u0437\u043e\u043b\u044f\u0446\u0456\u0457:** \u043d\u0430\u0439\u0432\u0438\u0449\u0438\u0439 \u0440\u0456\u0432\u0435\u043d\u044c.\n* **\u041f\u043e\u0432\u0435\u0434\u0456\u043d\u043a\u0430:** \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u0432\u0438\u043a\u043e\u043d\u0430\u043d\u043d\u044f \u043f\u0430\u0440\u0430\u043b\u0435\u043b\u044c\u043d\u0438\u0445 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u0439 \u0454 \u0435\u043a\u0432\u0456\u0432\u0430\u043b\u0435\u043d\u0442\u043d\u0438\u043c \u0434\u0435\u044f\u043a\u043e\u043c\u0443 \u0457\u0445\u043d\u044c\u043e\u043c\u0443 \u043f\u043e\u0441\u043b\u0456\u0434\u043e\u0432\u043d\u043e\u043c\u0443 \u0432\u0438\u043a\u043e\u043d\u0430\u043d\u043d\u044e.\n* **\u0410\u043d\u043e\u043c\u0430\u043b\u0456\u0457:** \u0443\u0441\u0443\u0432\u0430\u0454 **dirty read**, **non-repeatable read** \u0442\u0430 **phantom read**.\n* **\u041e\u0441\u043e\u0431\u043b\u0438\u0432\u0456\u0441\u0442\u044c:** \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0456\u044e \u043c\u043e\u0436\u0435 \u0431\u0443\u0442\u0438 \u0432\u0456\u0434\u0445\u0438\u043b\u0435\u043d\u043e \u0447\u0435\u0440\u0435\u0437 \u043a\u043e\u043d\u0444\u043b\u0456\u043a\u0442 \u0441\u0435\u0440\u0456\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u0457, \u0456 \u0432 \u0442\u0430\u043a\u043e\u043c\u0443 \u0440\u0430\u0437\u0456 \u0457\u0457 \u043d\u0435\u043e\u0431\u0445\u0456\u0434\u043d\u043e \u043f\u043e\u0432\u0442\u043e\u0440\u0438\u0442\u0438.",
+        "thoughtSignature": "Eo4VCosVAWkUfRMsF8g_PU31z7-fdO9bjH20Kbs1OOSyk3UXGPwSHfEGXi0-t1a6SiZQgZDzFFHHasEHGgCerouSSsC-0YjSDLLbXeXNITiFsUNfP2nK0nLAo2ust-hISr4xXuEkE_LqwDyNQU6M0hDB-KY4CqN7FStITMxHt6en7w7Ct6CmbY_DSXa0Tg0JvDnrZq_vCDGuVfzEFo9A5pd1ih2ZVPP8S_mcIeGrNZ3L8ufw02gZo5twMEls-G4DmAiGDNSR50G_i96tF8VFTAZBgDMhuXSNj8a96l-ILWq32seSFt1AVuctbQzXQzKg0obppcNY1cp3x3U0AtmuDn104ZWhFkHtjHqxsyfN-UZSY2z7phzDyUYA7VciHUZhJhXYqrQWuz9Ap-0kN-xb7SejqVsMlWnT1JrRn_0e_63Lah-WOfYxfekL5gd3NQSu6ikPsy4clQFjxScF_ZBIrX8zfGHKEf1nXRlIxBR_GPnC0IbP5JnNBCzQqYs44Wqpr9L_FIzva639iqdDFlfcEjOADlq29YlW4L6ZEtPRA4SnB1VBrFtV1hIhm2W9sWkI1aRcnWicgEyL6_osRW5_C8_U0GXe3lP9hqhHYdxeKpqxwWHX8GCsF0hzUXGdjosUBshRr14wyOdgNETTXx-7XP-Q6s6aglrwe_g_ZXz0puWq4ZFt1wr1zWWOML-kud_erT6SSU3o88sQi4wIBVzj7upD_vBT18Bx9qp6C4jW8pH4MlpHPbAzHc5p7yCwL7eVue2-5FweRNBIumoHUhsIFpVaA9kKVeWvCGrz54k4OoryS5SwP6v-tTSP9iqpdQDoMaw7LJos8uUWUUEPMIK5uTg0xBXV9s6qDRWVvp9_esPwDxXiSp3fsETkw7lbHSQR9P_Utn_9D3rDeg0rmTxZQ5nWYfmvZH0vZlq-bcOXdHsod37EL70cXJwFUYB2q3JorAGoJLJ_IhozRPm3S33Zwt1yuO1tZNlBPjHenQoSkR1MnDVREr0yIoyf5c--WvWVwwjn3rhx7Dhlw5CC89YrTkTkQpokT65NUCkr-FGPtABXyKIleJA2Fs_puCWRmmzu8riW5Bpinq1BEjHfY9MdmWZj0XjOtQCzpGDp-p66vVNB8dDa4h1lR5rn_vxxblDdrWYwM4FZlj6EoQhvoxXygI_aydASjG6NbC4dgF1MbQLA9gnC8VzjYU2YyqGknrtKINAauiNwpFyh-stdRmTkAX9pJ08ZEv7mfW8I_-vMR8-YOtqs14HccC-RaglG4xlyqPt-7rVnULfOab5hcqJsSgZ65mHeTvOVN-hwv0qfVMYi0aMmB0frEkqJ6V3HK6AaZDzp2iCpxT7cnNmTpIkqW23LfxmX1qaykaE5kllE1YPUy9jxLaua7GVl6UEPoZ_EfwKR0MDICQ8enOwD0L49exJ7uc6Xk7XoEWs8iGNm9VgKaj53KYxnyeTiF1AdHBev1_J-b_MZGfeHzvY6WlUPzYqV9yZ9Ss3EGcpRLLLBNDld4LR311gqP4n-ksInZkdl1p_TArOQpyAc8jrDDEyxfYcKNUN1N1kn7Ac9y7PDnnLsbjwDNNs9hBgynWhyyTCN1GxoLqIOWcQ3_FUwBPXatusGeIdAycO6b8GnE1G8eM9SUOI9yORucbhKsoOx4XIBjX2RldyIeSWGzMvlAm1FrlRHPbqCMlOGkM1OCzNFngUfzhrZYM9y1zrDD4ul3ELdMI6mz35DPZK0HGo1MKG3GFJb6YEUYKE9xs8usEnHatLjXp-UoS5A1AuXFxmNL0V0Z76u4mK1_IVWvQwCxFEk7R4QMlZpCFup_38COtw7m09FUs-cEZ4uyaNqqlrn4Ds6OkuLSyRpbAS0x8nsEPcucc0V1iVVOW5WqjGn10kwOMlMgnv2V2aeWsQaT033RcNE-ddHSaUIvR7Z37IGfVaeimLcAK3uRCNJuCt5ibZklJ9I0XGBoELO6piXeUvYilNItF7a-HVrpfRbzvLzD7MTOS_XdBgG5GWpLYymNB8yjvoloNEYYYLS2gNttRDR8NHMNggutd9G_IeqTUoM2lc9z66phFQiWh8ipl5LF-xRi_KTVlRQ8syCL4bqmMv-It4aK0o38ZoRxcYQM-o-aFfoU5usuOqNv18AMEEQmD-ZWYCOz8set_QqFKhRHFhMZtJsR_YuE221AF6VkkkYRT6528CfvFEGR7jT-RYOTxGaQ7g1967bCZ-OvhJJTkUpDnVoL3j-7HigBiUiFpPaOPEZknP0ypnxvD-VezA-24_6sux9sli_WIMVE97PTXOTtGfU19CTfKNZLIDV3U1pX4032xuYdo2f-XkPuCrw29W3meH2vd8EKblUpmrD4VoxYs1hArbLqkLc_qM2-SxoBl584rtfzNuCweLaDdYlNkXdiAXhT_ckkocX7-x2wuHEkL8tjQmDan2ZXLma9mB4mBjnWYU7Cz8XTToauVuNDvJmHjmFzr6nOo3zZZwlvL0XQKqRVtbq3FqKb3cpq8m0Q-HUvwROGylz_SRWUCLZ8JIf0hVh_HfqcJnFgBBc8BaxrPYe7H72oPRt_pkS8Fl_pLuBbnQFa3fBJY-0_1t71rQoCO00HQ3S3v4dKe6pZOKNlprSZjuOe40lkf_48lyS4AiYdM_EyXWtfTgmu7dWJXSIaScmE1DuagdAWULcvbsZrnzPXGGJ3XUXghllC_Mozu_oGghKo4_KbOQghVDa2EoWTlVW0E50UtpcIYtwdTooBLdjFZ0RpmE5clN8YcoubCP6R9SfKIpKBknlvEgMs9uGEPOkM7_EAxypMZQ2zSysKN89ICRK-UKEU93h48R_3uFoB1PRJ9WMseHUIkieVinFpqMk8xmWoESINqmF0kUZp63ivbWMWVVkiX7rDyOM6RWEZsW93dt0bzrfQikk7n8Ej1ZT75U-Y0kIg_orhb7H-URUxVxF_F4d3kK4dgnFfj6OZSRLvp06T7zFpE0uSphRvmZP8UgVKW_K_TDYWxRP45nRf4f2170pvlAuRsIbLBl23aSi-QlJQ8Sc6puVHJWlsHNcs54UtkVRt2FOjiAwhwx5seUXwvPsh-0iqgyZTVvJz6utH4zyJ9tSEc_wAtuj9whaC9-MjBFwUSkqUd3v9-CWSZuRyyspRgldnoIB_6tPAedtALStNlrk-kiog2xg0XAARDxR82cxLr5W3AQ0j2sSncfGQEFqUquaiRyQ7QzFBbHbYDXBPa0ZjBUS_c4UHyQrhx7eYK-zu4_WFtwjoXVwtNHTvdt41TETNgxCjSeoU7atCRmXtHbFNudfDwKTeqjbX5qGVAoQRgQXKeFDhWztsSc-EcUN61o7SunPVe0U7wSUDTCxXOBEtx5uuZ9TAKeezDU1YohVa1fOJyAe9VWy-9c1jdh-368bsaD_4wH8VbnPv0wddoo85KbJyZmEMZZ0_6CrtFaYSyKdmgy_Wwpp7vjLitop2GoUA5eAWOpLXN1KqYeutna4GtbCQOBmlgG0DkfTN7J5mtwdm8PM54KfJR5KKveHlq5QcBMiJOp2RrShCdGVokrgeaN4lhOE38vcZ6nk6KoYtN5CobHvn7EM8KUzkgQoxZ6O69q9uBW2jBw="
+      }
+    ],
+    "role": "model"
+  },
+  "finishReason": "STOP",
+  "usageMetadata": {
+    "candidatesTokenCount": 253,
+    "promptTokenCount": 1004,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1004
+      }
+    ],
+    "thoughtsTokenCount": 500,
+    "totalTokenCount": 1757
+  },
+  "invocationId": "e-0d4a4b48-be3f-45e3-b701-388aac606c74",
+  "author": "root_agent",
+  "actions": {
+    "stateDelta": {},
+    "artifactDelta": {},
+    "requestedAuthConfigs": {},
+    "requestedToolConfirmations": {}
+  },
+  "nodeInfo": {
+    "path": "root_agent@1"
+  },
+  "id": "c4d57daa-4b22-4d50-97b0-5951e3ffbda5",
+  "timestamp": 1794822106.0946765
+}
+
+
+Session: 3c59567a-9e9d-41a3-88c7-4c786cb06610
+  One-off session — add --start-server to keep the local server (and its sessions) alive so you can resume with --session-id.
+Local server stopped.

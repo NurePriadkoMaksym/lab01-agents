@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+adk-agent/.env.example
+manual-agent/.env.example
+adk-agent/README.md

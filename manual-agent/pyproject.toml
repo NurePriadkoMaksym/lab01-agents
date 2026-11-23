@@ -1,0 +1,13 @@
+[project]
+name = "manual-agent"
+version = "1.0.0"
+description = "Lab 01: manual agent loop (SQL isolation levels)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["google-genai", "python-dotenv"]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

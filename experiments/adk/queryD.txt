@@ -1,0 +1,124 @@
+Starting a temporary local server on port 18080 (stops automatically when done).
+[user]: Опиши рівень ізоляції Cursor Stability
+[root_agent]: 
+[tool_call: lookup_isolation_level({"name": "cursor stability"})]
+{
+  "modelVersion": "gemini-3.6-flash",
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "id": "call_301325226306907531",
+          "args": {
+            "name": "cursor stability"
+          },
+          "name": "lookup_isolation_level"
+        },
+        "thoughtSignature": "EpQECpEEAWkUfRM_5Q2mp5ROwR5ZZtMK2jzNxikaCxrfDmxYqc28sIzFV8jqItx2WvzcBGS3QGgLR4ya4xuWGvHJxTKD3yiockJ9M1WNZomeXHIGydp05I9xe-53tdyGktCZO0FWxeyQ-Z04_IlqQWk0vL3yCnqSD2nJTGZu2lV8qLanBc_B3zKWTFgAmwmcnpE5oEutj32rT-Tm0jYgk4z0bOD_bBRf5LUq1an9ZHEoBjIkk6lvYvDRs0rQ4VFnG415RJJ838GC1AlcfMOJMoCOsdehFiBVCJsFsX7OvQQCSXM1X5UbHLsuIKBhYQzdOc8-s3Vf4WlOXO7JyvjMLvkNUEv7-KbRQ0XABHa-tkDb1hZYRJ_ni2cJpBodaBIIhcPrK6tIcRY83V2pZ4aLT-vmrgIV0Q1Ehcii4-l6MzSeUlHzM0t53GBlDCnBgm9ZjNPt8hWJQ4Fr6xK8pLN-2m5ZgKC43AHgvUpA1AfC5_qkjtyBzmHymiNbnleSpfnCLfCS770pQ5jwD1sAI4uxrDgh2JqcI8lDu-yE_DAnaNao44hMwUUvM38CfKZDeD2kOlabWS4PAct4noy_ay3EIrbrthBVWPuXpNm-zmFNQQ99_Lwkn7zWqGh3pmKNrIRIQUU2q-Nr7uBeB4Mv8qR15-QrExIQ6AvDcc3z1S3WmK3y0TPyuJQ8si3tnEEGat-mumzUWWcOyg=="
+      }
+    ],
+    "role": "model"
+  },
+  "finishReason": "STOP",
+  "usageMetadata": {
+    "candidatesTokenCount": 19,
+    "promptTokenCount": 685,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 685
+      }
+    ],
+    "thoughtsTokenCount": 87,
+    "totalTokenCount": 791
+  },
+  "invocationId": "e-0974ac6a-4ffb-4c10-b601-4a2a705bf38b",
+  "author": "root_agent",
+  "actions": {
+    "stateDelta": {},
+    "artifactDelta": {},
+    "requestedAuthConfigs": {},
+    "requestedToolConfirmations": {}
+  },
+  "nodeInfo": {
+    "path": "root_agent@1"
+  },
+  "longRunningToolIds": [],
+  "id": "12fbef6c-e63e-44ca-9143-486a609029ec",
+  "timestamp": 1794822216.2184145
+}
+
+[tool_response: lookup_isolation_level -> {"result": "NOT_FOUND: no verified information about isolation level 'cursor stability'."}]
+{
+  "content": {
+    "parts": [
+      {
+        "functionResponse": {
+          "id": "call_301325226306907531",
+          "name": "lookup_isolation_level",
+          "response": {
+            "result": "NOT_FOUND: no verified information about isolation level 'cursor stability'."
+          }
+        }
+      }
+    ],
+    "role": "user"
+  },
+  "invocationId": "e-0974ac6a-4ffb-4c10-b601-4a2a705bf38b",
+  "author": "root_agent",
+  "actions": {
+    "stateDelta": {},
+    "artifactDelta": {},
+    "requestedAuthConfigs": {},
+    "requestedToolConfirmations": {}
+  },
+  "nodeInfo": {
+    "path": "root_agent@1"
+  },
+  "id": "bae49a19-bf40-4c1c-82d2-61f7b45e840b",
+  "timestamp": 1794822216.2201304
+}
+На жаль, у мене немає перевірених даних про рівень ізоляції **Cursor Stability**.
+{
+  "modelVersion": "gemini-3.6-flash",
+  "content": {
+    "parts": [
+      {
+        "text": "\u041d\u0430 \u0436\u0430\u043b\u044c, \u0443 \u043c\u0435\u043d\u0435 \u043d\u0435\u043c\u0430\u0454 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u0435\u043d\u0438\u0445 \u0434\u0430\u043d\u0438\u0445 \u043f\u0440\u043e \u0440\u0456\u0432\u0435\u043d\u044c \u0456\u0437\u043e\u043b\u044f\u0446\u0456\u0457 **Cursor Stability**.",
+        "thoughtSignature": "EuYGCuMGAWkUfROl4QMS2UiUlGkj5j40hkrz_cho41L8YuojzTOQHa0aXt-d4B8r77qg5qIaT0rk-yRPfhAmBSYqtoGDzXSm9a9d9ads7RIjd9yZEH2xRjWAJ7L6_VhieKw354v4ar8p7ejjp69hJzGPuoXd5axq10druqxZDzJ98-mBHeC6Y463V4sKNH-7XxTwfsEsz1rTmlwPeUBLLksu9GDi7815rpkT0ADstvefieaPm7S4eeQA_NjGj2UFCIm4ZDotY56PHCNc_FI3xGURwlo4mYiTNaT2sfuv8QwhgKvfUnJK_W6qVsDQxnEWpYSl0WlvuAPxKHoPpakxdiMPtEEuGN_APXkePDp10_b-60BQRIjkeB6NledRaKMna-9rl1LRzoGPGLu1ZfTFJqaM6_q-h94hLLZAdhE3ZZ2PmzQnzzXTo47KjYUejE0hRFdd_9DkZ2pqATrLFzltavwB8v2h6sAt7tCJRqarZ9HQRdvl8p0_TMl6jVUmL23JT8UgfAlmTFiaQ3SRaN7Ik43JfbOH7PmnQNEx0PiBXrOzA8xkQ38Smx-LGaZC001xkuLqG_WCzXhZOlGQgRKZUvV1VKMpeIlK97Qa_kXoVICmstcu5aq-S0YTGelTp_4TpzlUfcomUcYK9ppybiCgAq6EazTsmaTu9f_e-lDnqAw5SJ8bCPPvQXtzNIdiHcjkYTmn35iC6cVstttJmbGthg20w29TWXk_i3opnXRwtR3EhEozEirk73LveRy8KGsEJnAlzKXiRooQ8wD6ykD9-kjYC3TYaIjK0JPays-xfWOfugT_x1Wd2AegdEYad_FK1HLALElXmbj2TyHlQZkcMs4iiv8lKadcOSrVfV5_HqTmalEHfZzgbdTU1di1E30BiA8Bn50TvE0F7SPB8aov8Jgzex8dfE0lPbYTuE9XKNK9jluyjvOSER_VfpADKae44bnWLmjLDncLrrxcwjY7iRbsfaCY0ShtdZUf_6l7qPN-QrBdHzrpzM226zdJQqfKRa2iL85Lrf7FkdCtffbKCJ6n3OSA1DNXv2SeulHUjwZCIvOu7ygGXgTH2L_REIMoFin2vy07Cep9fL9MQMCl6arSW5zfz8J-jF_MdXf6w9aSJbS1SPgolzcFesUTMV3RmGKAEqJR9G5n"
+      }
+    ],
+    "role": "model"
+  },
+  "finishReason": "STOP",
+  "usageMetadata": {
+    "candidatesTokenCount": 22,
+    "promptTokenCount": 820,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 820
+      }
+    ],
+    "thoughtsTokenCount": 150,
+    "totalTokenCount": 992
+  },
+  "invocationId": "e-0974ac6a-4ffb-4c10-b601-4a2a705bf38b",
+  "author": "root_agent",
+  "actions": {
+    "stateDelta": {},
+    "artifactDelta": {},
+    "requestedAuthConfigs": {},
+    "requestedToolConfirmations": {}
+  },
+  "nodeInfo": {
+    "path": "root_agent@1"
+  },
+  "id": "662b07f8-7626-4416-b72c-3dcf37e1ddd0",
+  "timestamp": 1794822219.3853889
+}
+
+
+Session: 6acc5cb0-3c88-4c41-a083-1a4c27216a32
+  One-off session — add --start-server to keep the local server (and its sessions) alive so you can resume with --session-id.
+Local server stopped.
